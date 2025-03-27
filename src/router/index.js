@@ -3,10 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 // 引入需要用到的页面组件
 import Login from '../views/Login.vue'
 import Home from '../views/Home.vue'
-import Crops from '../views/Crops.vue'       // 播种管理页面
-import Weather from '../views/Weather.vue'   // 天气检测页面
-import Reminders from '../views/Reminders.vue' // 施肥管理页面
-import Community from '../views/Community.vue' // 博客交流页面
+import CropQuery from '../views/CropQuery.vue';
+import EnvironmentMonitoring from '../views/EnvironmentMonitoring.vue';
+import SelfCultivation from '../views/SelfCultivation.vue';
+import CommunityInteraction from '../views/CommunityInteraction.vue';
+import AboutUs from '../views/AboutUs.vue';
 
 // 定义路由数组，包含了页面的路径与对应组件
 const routes = [
@@ -14,10 +15,11 @@ const routes = [
   { path: '/', component: Login },
   // 路径为 '/home' 时，加载 Home 组件（主页）
   { path: '/home', component: Home },
-  { path: '/crops', component: Crops },  // 播种管理页
-  { path: '/weather', component: Weather },  // 天气检测页
-  { path: '/reminders', component: Reminders }, // 施肥管理页
-  { path: '/community', component: Community }, // 博客交流页
+  { path: '/crop-query', name: 'CropQuery', component: CropQuery },
+  { path: '/environment-monitoring', name: 'EnvironmentMonitoring', component: EnvironmentMonitoring },
+  { path: '/self-cultivation', name: 'SelfCultivation', component: SelfCultivation },
+  { path: '/community-interaction', name: 'CommunityInteraction', component: CommunityInteraction },
+  { path: '/about-us', name: 'AboutUs', component: AboutUs },
 ]
 
 // 创建 Vue Router 实例

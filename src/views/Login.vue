@@ -46,7 +46,6 @@
     console.log('登录信息:', form.value);
   
     // 如果用户名和密码不为空，登录成功后跳转到主页
-    alert('登录成功！');
     router.push('/home');
   };
   </script>
