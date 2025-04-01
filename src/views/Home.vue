@@ -229,7 +229,7 @@ body {
 
 /* 走马灯 */
 .carousel-img {
-  width: 100%;
+  width: 400px;
   height: 300px;
   object-fit: cover;
 }
@@ -238,7 +238,10 @@ body {
   flex: 1;
   padding-left: 20px;
 }
-
+.main-content img {
+  width: 100%;
+  height: 400px;
+}
 .carousel-image {
   width: 1400px;
   height: 400px;
